@@ -12,14 +12,20 @@ if (path.toLowerCase() == 'left') {
 
 	if (left == 'refigerator' || left == 'fridge') {
 		confirm("You go for the fridge and slowly close the door. You hear rustling and tumbling...and then it gets quiet...do you want to check outside the fridge and make a run for it?")
+		if (true)
+			alert("You quietly open the fridge door and run as fast you can to the outside to which you find a seering sludge pile that you fall into burning you into a crisp")
 	}
 
 	if (left == 'employee lounge' || left == 'lounge') {
 		confirm("You see the employee lounge and you rush and close the door behind you. You see four employees named Tim, Jason, Carrie, and Ryan....they say to only stop Sweeney is to make two human sacrifices...Are you going to do it?")
 		if (true) {
-			prompt("Wow you are a moral monster if you made this choice....who would you choose? Tim, Carrie, Jason, or Ryan.")
-			if (true == 'Carrie' || true == 'carrie' && true == 'Ryan' || true == 'ryan')
-				alert("You sent poor Carrie and Ryan out to Sweeney to get eaten. Lucky for them Sweeney is allergic to veal to which Ryan was carrying around in his pocket. So Sweeney dissolved into a puddle and you are safe!")
+			var name = prompt("Wow you are a moral monster if you made this choice....who would you choose? Tim, Carrie, Jason, or Ryan.")
+			if (name == 'Carrie' || name == 'carrie' || name == 'Ryan' || name == 'ryan') {
+				alert("You sent poor Carrie and Ryan out to Sweeney to get eaten. Lucky for them Sweeney is allergic to veal to which Ryan was carrying around in his pocket his friend made him on Master Chef. So Sweeney dissolved into a puddle after he chucked it at him and now there is peace and you are safe!")
+			} else { 
+				alert("You send Tim and Jason out there, Sweeney charges and spews radioactive sludge and they melt to just bones. Then he comes for you! And you suffer the same fate!")
+
+			}
 		}
 	}
 
@@ -28,7 +34,8 @@ if (path.toLowerCase() == 'left') {
 	if (right == true) {
 		alert("You humbly accepted Gabe's help, he nods and charges towards Sweeney. Grabbing him with his giant hands and crushing him to death.")
 
-	} else {
+	} else { 
+		prompt("You didn't accept his help...Uh oh.....you ticked off Gabe, he says that I have a choice of answering him this one question or I'll get stomped on....What did the traffic light")
 
 	}
 }
