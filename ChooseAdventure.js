@@ -1,5 +1,7 @@
 
 var path = prompt('There is a rabid mutant Mike Sweeney on the loose and is chasing you down an intersection...you take a path....Left or Right');
+var score = function() {
+} ;
 
 if (path.toLowerCase() == 'left') {
 	var left = prompt("You take the path left into a Sears to which you have a choice of hiding in a Washer, Refigerator, or the employee lounge...Which do you Choose?");
@@ -14,6 +16,10 @@ if (path.toLowerCase() == 'left') {
 		confirm("You go for the fridge and slowly close the door. You hear rustling and tumbling...and then it gets quiet...do you want to check outside the fridge and make a run for it?")
 		if (true)
 			alert("You quietly open the fridge door and run as fast you can to the outside to which you find a seering sludge pile that you fall into burning you into a crisp")
+			else  {
+				alert("You stay in there for an extra 5 minutes and then manage to escape outside. You win!")
+			
+		}
 	}
 
 	if (left == 'employee lounge' || left == 'lounge') {
@@ -35,8 +41,12 @@ if (path.toLowerCase() == 'left') {
 		alert("You humbly accepted Gabe's help, he nods and charges towards Sweeney. Grabbing him with his giant hands and crushing him to death.")
 
 	} else { 
-		prompt("You didn't accept his help...Uh oh.....you ticked off Gabe, he says that I have a choice of answering him this one question or I'll get stomped on....What did the traffic light")
-
+		var joke = prompt("You didn't accept his help...Uh oh.....you ticked off Gabe, he says that I have a choice of answering him this one question or I'll get stomped on....What did the traffic light say to the car? Choices: Dont look I am changing, That's Mike's joke")
+		if (joke.toLowerCase == 'Dont look Im changing')
+			alert("You utter the answer, Gabe laughs in hysteria. Mike Sweeney comes charging saying he stole his joke and they start to fight and a battle ensues and you are in the cross fire to which you utterly get destroyed!")
+		else {
+			alert("You call out Gabe on his plagarism and Mike slowly creeping behind you. He hears you defending him. To which he protects you from the 10,000 foot Gabe and you escape as fast as possible into the woods.")
+		}
 	}
 }
 
